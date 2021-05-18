@@ -9,7 +9,7 @@ jQuery(document).ready(function ($) {
         success: function (res) {
             $('.main').html('');
             for (var a = 0; a < res.data.length; a++) {
-                $('.main').append(' <div class="display"> <p class="pic"> <img src="' + res.data[a].avatar + '" alt=""> </p> <p class="id">' + res.data[a].id + '</p> <p class="firstname ">' + res.data[a].first_name + '</p> <p class="lastname ">' + res.data[a].last_name + '</p> <p class="email">' + res.data[a].email + '</p> </div>');
+                $('.main').append(' <div class="display"> <p class="pic">  </p> <p class="id">' + res.data[a].id + '</p> <p class="firstname ">' + res.data[a].first_name + '</p> <p class="lastname ">' + res.data[a].last_name + '</p> <p class="email">' + res.data[a].email + '</p> <p class="pic"> <img src="' + res.data[a].avatar + '" alt=""> </p> </div>');
             }
 
         }
@@ -25,7 +25,7 @@ jQuery(document).ready(function ($) {
             success: function (res) {
                 $('.main').html('');
                 for (var a = 0; a < res.data.length; a++) {
-                    $('.main').append(' <div class="display"> <p class="pic"> <img src="' + res.data[a].avatar + '" alt=""> </p> <p class="id">' + res.data[a].id + '</p> <p class="firstname ">' + res.data[a].first_name + '</p> <p class="lastname ">' + res.data[a].last_name + '</p> <p class="email">' + res.data[a].email + '</p> </div>');
+                    $('.main').append(' <div class="display">  <p class="id">' + res.data[a].id + '</p> <p class="firstname ">' + res.data[a].first_name + '</p> <p class="lastname ">' + res.data[a].last_name + '</p> <p class="email">' + res.data[a].email + '</p><p class="pic"> <img src="' + res.data[a].avatar + '" alt=""> </p> </div>');
                 }
 
             }
@@ -44,7 +44,7 @@ jQuery(document).ready(function ($) {
             success: function (res) {
                 $('.main').html('');
                 for (var a = 0; a < res.data.length; a++) {
-                    $('.main').append(' <div class="display"> <p class="pic"> <img src="' + res.data[a].avatar + '" alt=""> </p> <p class="id">' + res.data[a].id + '</p> <p class="firstname ">' + res.data[a].first_name + '</p> <p class="lastname ">' + res.data[a].last_name + '</p> <p class="email">' + res.data[a].email + '</p> </div>');
+                    $('.main').append(' <div class="display">  </p> <p class="id">' + res.data[a].id + '</p> <p class="firstname ">' + res.data[a].first_name + '</p> <p class="lastname ">' + res.data[a].last_name + '</p> <p class="email">' + res.data[a].email + '</p> <p class="pic"> <img src="' + res.data[a].avatar + '" alt=""> </p></div>');
                 }
 
             }
